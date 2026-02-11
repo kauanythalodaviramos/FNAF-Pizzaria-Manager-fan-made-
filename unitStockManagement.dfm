@@ -66,6 +66,19 @@ object formStockManagement: TformStockManagement
     Font.Style = [fsBold]
     ParentFont = False
   end
+  object lbl2: TLabel
+    Left = 408
+    Top = 213
+    Width = 125
+    Height = 21
+    Caption = 'Number of Items'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI Semibold'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object panelStockManagement: TPanel
     Left = 0
     Top = 0
@@ -80,7 +93,7 @@ object formStockManagement: TformStockManagement
     object LabelStock: TLabel
       Left = 152
       Top = 127
-      Width = 49
+      Width = 44
       Height = 21
       Caption = 'Stock'
       Color = clBackground
@@ -119,6 +132,7 @@ object formStockManagement: TformStockManagement
       ImageIndex = 0
       Images = ImageListStock
       TabOrder = 0
+      OnClick = StckManagButtonStockClick
     end
     object StockManagementAnimatronics: TButton
       Left = 392
@@ -135,7 +149,7 @@ object formStockManagement: TformStockManagement
   object ComboBoxStockAnimatronic: TComboBox
     Left = 16
     Top = 240
-    Width = 177
+    Width = 217
     Height = 23
     AutoDropDown = True
     TabOrder = 1
@@ -176,7 +190,7 @@ object formStockManagement: TformStockManagement
   object ComboBox2: TComboBox
     Left = 16
     Top = 320
-    Width = 177
+    Width = 217
     Height = 23
     AutoDropDown = True
     TabOrder = 2
@@ -198,7 +212,7 @@ object formStockManagement: TformStockManagement
   object ComboBox1: TComboBox
     Left = 19
     Top = 392
-    Width = 177
+    Width = 214
     Height = 23
     AutoDropDown = True
     TabOrder = 3
@@ -229,13 +243,21 @@ object formStockManagement: TformStockManagement
       'Banana Milkshake'
       'Oreo Milkshake')
   end
+  object ListBox1: TListBox
+    Left = 392
+    Top = 240
+    Width = 217
+    Height = 175
+    ItemHeight = 15
+    TabOrder = 4
+  end
   object ImageListStock: TImageList
     Height = 128
     Width = 128
     Left = 296
     Top = 104
     Bitmap = {
-      494C010102001400040080008000FFFFFFFFFF00FFFFFFFFFFFFFFFF424D3600
+      494C010102001400040080008000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000000200008000000001002000000000000000
       0400000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -8687,6 +8709,7 @@ object formStockManagement: TformStockManagement
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000
       00000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000
-      00000000000000000000000000000000}
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000}
   end
 end

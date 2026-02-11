@@ -135,6 +135,15 @@
             <Form>formStockManagement</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="unitStockManagementStockAdd.pas">
+            <Form>formStockAdd</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="unitStockManagementAnimatronicAdd.pas">
+            <Form>Form2</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="unitWardrobe.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

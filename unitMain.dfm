@@ -1,6 +1,6 @@
 object formMainScreen: TformMainScreen
-  Left = 0
-  Top = 0
+  Left = 613
+  Top = 270
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Five Nights at Freddy'#39's Management App'
@@ -13,6 +13,7 @@ object formMainScreen: TformMainScreen
   Font.Name = 'Segoe UI'
   Font.Style = []
   Menu = formMainScreenMainMenu
+  Position = poDesigned
   WindowState = wsMaximized
   TextHeight = 15
   object LogoFNAFBackgroundMainMenu: TImage
