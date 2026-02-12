@@ -13,13 +13,14 @@ object formStockManagement: TformStockManagement
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poDesigned
+  OnCreate = FormCreate
   TextHeight = 15
   object StockName: TLabel
     Left = 16
     Top = 168
-    Width = 99
+    Width = 205
     Height = 32
-    Caption = 'Quantity'
+    Caption = 'Search and Delete'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -24
@@ -30,35 +31,9 @@ object formStockManagement: TformStockManagement
   object lbl1: TLabel
     Left = 16
     Top = 213
-    Width = 84
+    Width = 87
     Height = 21
-    Caption = 'Ingredients'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Segoe UI Semibold'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label2: TLabel
-    Left = 19
-    Top = 293
-    Width = 96
-    Height = 21
-    Caption = 'Animatronics'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Segoe UI Semibold'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label1: TLabel
-    Left = 19
-    Top = 365
-    Width = 45
-    Height = 21
-    Caption = 'Drinks'
+    Caption = 'Search Item'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -67,11 +42,24 @@ object formStockManagement: TformStockManagement
     ParentFont = False
   end
   object lbl2: TLabel
-    Left = 408
+    Left = 312
     Top = 213
-    Width = 125
+    Width = 221
     Height = 21
-    Caption = 'Number of Items'
+    Caption = 'Item/Animatronic Information'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI Semibold'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Top = 269
+    Width = 96
+    Height = 21
+    Caption = 'Animatronics'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -187,69 +175,78 @@ object formStockManagement: TformStockManagement
       'Flour'
       'Yeast')
   end
-  object ComboBox2: TComboBox
+  object editanimatronicssearch: TComboBox
     Left = 16
-    Top = 320
+    Top = 296
     Width = 217
     Height = 23
     AutoDropDown = True
     TabOrder = 2
     Items.Strings = (
-      'Toy Freddy'
-      'Toy Bonnie'
-      'Toy Chica'
-      'Mangle'
-      'Balloon Boy'
-      'Withered Freddy'
-      'Withered Bonnie'
-      'Withered Chica'
-      'Withered Foxy'
-      'The Puppet'
-      'Golden Freddy'
-      'Shadow Freddy'
-      'Shadow Bonnie')
+      'Tomato sauce'
+      'Cheese'
+      'Mozzarella'
+      'Cheddar'
+      'Parmesan'
+      'Provolone'
+      'Gorgonzola'
+      'Ricotta'
+      'Pepperoni'
+      'Ham'
+      'Bacon'
+      'Sausage'
+      'Chicken'
+      'Beef'
+      'Salami'
+      'Mushrooms'
+      'Onions'
+      'Garlic'
+      'Olives'
+      'Bell peppers'
+      'Tomatoes'
+      'Spinach'
+      'Corn'
+      'Pineapple'
+      'Arugula'
+      'Zucchini'
+      'Basil'
+      'Oregano'
+      'Olive oil'
+      'Pizza dough'
+      'Flour'
+      'Yeast')
   end
-  object ComboBox1: TComboBox
-    Left = 19
-    Top = 392
-    Width = 214
-    Height = 23
-    AutoDropDown = True
+  object btnSearch: TButton
+    Left = 16
+    Top = 336
+    Width = 105
+    Height = 79
+    Caption = 'SEARCH'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Yu Gothic UI'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 3
-    Items.Strings = (
-      'Cola'
-      'Diet Cola'
-      'Lemon Soda'
-      'Orange Soda'
-      'Grape Soda'
-      'Guarana'
-      'Ginger Ale'
-      'Tonic Water'
-      'Root Beer'
-      'Sparkling Water'
-      'Still Water'
-      'Orange Juice'
-      'Apple Juice'
-      'Grape Juice'
-      'Pineapple Juice'
-      'Mango Juice'
-      'Strawberry Juice'
-      'Lemon Juice'
-      'Passion Fruit Juice'
-      'Mixed Fruit Juice'
-      'Vanilla Milkshake'
-      'Chocolate Milkshake'
-      'Strawberry Milkshake'
-      'Banana Milkshake'
-      'Oreo Milkshake')
   end
-  object ListBox1: TListBox
-    Left = 392
-    Top = 240
-    Width = 217
-    Height = 175
-    ItemHeight = 15
+  object btnDelete: TButton
+    Left = 127
+    Top = 336
+    Width = 105
+    Height = 79
+    Caption = 'DELETE'
     TabOrder = 4
+  end
+  object mmShowDataItemAnimatronic: TMemo
+    Left = 256
+    Top = 240
+    Width = 329
+    Height = 175
+    Lines.Strings = (
+      'mmShowDataItemAnimatronic')
+    ReadOnly = True
+    TabOrder = 5
   end
   object ImageListStock: TImageList
     Height = 128
