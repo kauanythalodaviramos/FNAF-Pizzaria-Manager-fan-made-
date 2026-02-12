@@ -1,6 +1,6 @@
 Is basically an app made with delphi inspired by Five Nights at Freddy's pizzaria. 
 
-"Michael Afton" ( fictional character of FNAF's franchise ) frequently used it while de FNAF2 events to organize the restaurant and employee stuff, just like the animatronics.
+"Michael Afton" ( fictional character of FNAF's franchise ) frequently used it while the FNAF2 events to organize the restaurant and employee stuff, just like the animatronics.
 
 What can you do with it?
 You can register new Items like **Pizza** and other **ingredients** or **drinks**; 
